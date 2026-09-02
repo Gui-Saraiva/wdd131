@@ -1,0 +1,170 @@
+/* =========================
+   MOBILE
+   ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+header {
+    background-color: chocolate;
+    width: 100vw;
+}
+
+header h1 {    
+    text-align: center;
+    background-color: chocolate;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+nav {    
+    background-color: rgb(121, 50, 0);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: .6rem;
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+nav a:hover {
+    border: 2px solid #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65vw;
+    margin-bottom: 1.5rem;
+}
+
+main h1 {
+    text-align: center;
+    padding: .7rem;
+    font-size: 1.8rem;
+}
+
+.h3-main {
+    background-color: chocolate;
+    width: 100%;
+    text-align: center;
+    border-radius: 6px 6px 0px 0px;
+    padding: .3rem;
+}
+
+.container-cards {
+    display: grid;
+    gap: .3rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ccc;
+    width: 100%;
+    border-radius: 8px;    
+}
+
+.container-card-1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-items: center;    
+    padding: 1rem;  
+}
+
+.container-card-1 img {
+    width: 8rem;
+    height: auto;
+    border-radius: 6px;
+}
+
+.container-sobre-mim {
+    display: flex;
+    line-height: 1.6;
+    font-size: .9rem;
+    padding-right: .7rem;
+}
+
+.container-card-1 h3 {
+    text-align: center;
+}
+
+.linha {
+    display: block;    
+    width: 80%;
+    height: 2px;
+    background-color: #ccc;
+    margin: 0 auto 15px
+}
+
+.container-brasil{
+    display: flex;
+    margin-top: 8px;    
+}
+
+.container-brasil p {
+    margin-left: 8px;
+}
+.container-links {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    line-height: 2;
+}
+
+.container-links ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.container-links ul li a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: chocolate;
+    width: 100vw;
+    padding: .6rem;    
+    text-align: center;
+}
+
+/* =========================
+   TABLET / DESKTOP
+   ========================= */
+
+@media (min-width: 640px) { /* se largura >= 640px */
+    nav ul {
+        display: flex;        
+    }
+    
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    .container-cards {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: .3rem;
+    }
+}

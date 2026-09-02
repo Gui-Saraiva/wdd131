@@ -17,17 +17,19 @@ body {
 header {
     background-color: chocolate;
     width: 100vw;
+    text-align: center;
+    
 }
 
-header h1 {    
-    text-align: center;
-    background-color: chocolate;
-    padding: 1rem;
-    font-size: 1.4rem;
+header span {
+    display: block; 
+    font-size: 1rem;
+    padding: .5rem;
+    font-weight: 600;
 }
 
 nav {    
-    background-color: rgb(121, 50, 0);
+    background-color: rgb(0, 0, 0);
 }
 
 nav ul {
@@ -61,12 +63,13 @@ main h1 {
     font-size: 1.8rem;
 }
 
-.h3-main {
+.h2-main {
     background-color: chocolate;
     width: 100%;
     text-align: center;
     border-radius: 6px 6px 0px 0px;
     padding: .3rem;
+    font-size: .8rem;
 }
 
 .container-cards {
@@ -74,7 +77,7 @@ main h1 {
     gap: .3rem;
 }
 
-.cards {
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,7 +106,7 @@ main h1 {
     padding-right: .7rem;
 }
 
-.container-card-1 h3 {
+.container-card-1 h2 {
     text-align: center;
 }
 
@@ -115,9 +118,13 @@ main h1 {
     margin: 0 auto 15px
 }
 
+.card-1-coluna-1 h2 {
+    font-size: 1.1rem;
+}
+
 .container-brasil{
     display: flex;
-    margin-top: 8px;    
+    margin-top: 8px; 
 }
 
 .container-brasil p {

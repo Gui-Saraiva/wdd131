@@ -38,17 +38,7 @@ nav.open {
     display: block;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;    
-}
-
-nav ul li {
-    flex: 1;
-}
-
-nav ul li a {
+nav a {
     display: block;
     text-decoration: none;    
     padding: 1rem;
@@ -56,7 +46,7 @@ nav ul li a {
     text-align: center;
 }
 
-nav ul li a:hover {
+nav a:hover {
     background-color: var(--bege-hover);
 }
 

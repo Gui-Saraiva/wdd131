@@ -1,0 +1,122 @@
+:root {
+    --bege: rgb(247, 234, 177);
+    --bege-hover: rgb(255, 249, 220);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;;
+}
+
+header {
+    background-color: var(--bege);
+    padding: .7rem;
+}
+
+header p.titulo {
+    display: block;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    font-weight: 900;
+}
+
+header p.open {
+    display: none;
+}
+
+nav {
+    display: none;
+    margin: -.7rem;    
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;    
+}
+
+nav ul li {
+    flex: 1;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;    
+    padding: 1rem;
+    color: black;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: var(--bege-hover);
+}
+
+#hamb {
+    position: absolute;
+    top: 1px;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-size: 2rem;    
+}
+
+#hamb::before {
+    content: "☰";
+}
+
+#hamb.open::before {
+    content: "✕";
+}
+
+main {
+    max-width: 800px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: .6rem;
+}
+
+figure img {    
+    width: 100%;
+    height: auto;
+    border-radius: .5rem;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+    background-color: var(--bege);
+    padding: 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+#ultimaModificacao {
+    text-align: center;
+}
+

@@ -1,0 +1,26 @@
+@media (min-width: 620px) {
+    header {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        flex: 1;
+        margin: -.7rem;
+        margin-left: 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    nav ul li {
+        flex: 1
+    }
+
+    #hamb {
+        display: none;
+    }
+}

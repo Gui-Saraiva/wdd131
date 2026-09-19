@@ -8,6 +8,7 @@
     --vermelho: rgb(196, 0, 0);
     --branco: #fff;
     --verm-claro: rgb(255, 234, 234);
+    --branco-alfa: rgba(255, 255, 255, 0.5);
 }
 
 body {

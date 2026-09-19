@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do País Japão</title>
+    <meta name="description" content="Pagina responsiva mudando entre tela pequena e grande. A imagem hero troca conforme o tamanho da tela muda.">
+    <meta name="author" content="Guilherme Fagundes Saraiva">
+    <link rel="stylesheet" href="estilos/local-mobile.css">
+    <link rel="stylesheet" href="estilos/local-desktop.css">
+    <script src="scripts/local.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Japão</h1>
+        <div class="header-tarja"></div>
+    </header>
+        
+    <main>
+        <div>
+            <picture>
+                <source media="(min-width: 620px)" srcset="imagens/japao-desktop.webp" width="620" height="400">
+                <img src="imagens/casa-japao.webp" alt="casa japonesa" width="860" height="500">
+            </picture>
+            <div class="main-tarja"></div>
+        </div>
+
+        <section class="section-data">
+            <h2>Data</h2>
+            <dl>
+                <div>
+                    <dt>Area:</dt>
+                    <dd>377.975 km²</dd>
+                </div>
+                <div>
+                    <dt>Population:</dt>
+                    <dd>122.680.000</dd>
+                </div>
+                <div>
+                    <dt>Capital:</dt>
+                    <dd>Tokyo</dd>
+                </div>
+                <div>
+                    <dt>Languages:</dt>
+                    <dd>Japanese</dd>
+                </div>
+                <div>
+                    <dt>Currency:</dt>
+                    <dd>Japanese Yen</dd>
+                </div>
+                <div>
+                    <dt>Time Zone:</dt>
+                    <dd>UTC+9</dd>
+                </div>
+                <div>
+                    <dt>Calling Code:</dt>
+                    <dd>+81</dd>
+                </div>
+                <div>
+                    <dt>Internet TLD:</dt>
+                    <dd>1.000.jp</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="section-weather">
+            <div class="weather-titulo">
+                <h2>Weather</h2>
+                <img class="weather-ico" src="imagens/weather-ico.svg" alt="weather ico" width="50" height="50">
+            </div>
+            <dl>
+                <div>
+                    <dt>Temperature:</dt>
+                    <dd class="temperatura">5 °C</dd>
+                </div>
+                <div>
+                    <dt>Conditions:</dt>
+                    <dd>Partly Cloudy</dd>
+                </div>
+                <div>
+                    <dt>Wind:</dt>
+                    <dd class="velocidade-vento">10 km/h</dd>
+                </div>
+                <div>
+                    <dt>Wind Chill:</dt>
+                    <dd class="sensacao">25 °C</dd>
+                </div>
+            </dl>
+        </section>        
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> &#10070; Guilherme Fagundes Saraiva &#10070;</p>
+        <p>Japão</p>
+        <p id="ultimaMoficacao"></p>
+    </footer>
+</body>
+</html>

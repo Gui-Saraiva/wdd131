@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --vermelho: rgb(196, 0, 0);
+    --branco: #fff;
+    --verm-claro: rgb(255, 234, 234);
+}
+
+body {
+    background-color: var(--verm-claro);
+}
+
+header {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+header h1 {
+    display: grid;
+    width: 100%;
+    place-items: center;
+    height: 4rem;
+    color: var(--vermelho);
+    border: 3px solid var(--vermelho);
+    background-color: var(--branco);
+}
+
+.header-tarja {
+    width: 100%;
+    height: 20px;
+    background-color: var(--vermelho);
+}
+
+main {
+    margin: 0 auto;
+    max-width: 480px;
+    background-color: var(--branco);
+}
+
+main img {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+.main-tarja {
+    width: 100%;
+    height: .4rem;
+    background-color: var(--vermelho);
+}
+
+main section h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+main section dl div {
+    display: flex;
+    justify-content: center;
+    line-height: 1.8rem;
+    gap: .3rem;
+}
+
+dt {
+    font-weight: bold;
+}
+
+.weather-ico {
+    width: 4rem;
+    margin: 20px auto;
+}
+
+.section-weather {
+    padding-bottom: 1rem;
+}
+
+footer {
+    background-color: var(--vermelho);
+    max-width: 480px;
+    text-align: center;    
+    padding: 1rem;
+    line-height: 1.3rem;    
+    margin: 0 auto;
+}
+
+footer p, span {
+    color: var(--branco);
+}

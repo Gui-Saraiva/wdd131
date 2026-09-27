@@ -1,0 +1,133 @@
+:root {
+    --bege: rgb(247, 234, 177);
+    --bege-hover: rgb(255, 249, 220);
+    --marrom: rgb(114, 61, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;;
+}
+
+header {
+    background-color: var(--bege);
+    padding: .7rem;
+}
+
+header p.titulo {
+    display: block;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    font-weight: 900;
+}
+
+header p.open {
+    display: none;
+}
+
+nav {
+    display: none;
+    margin: -.7rem;    
+}
+
+nav.open {
+    display: block;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;    
+    padding: 1rem;
+    color: black;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--bege-hover);
+}
+
+#hamb {
+    position: absolute;
+    top: 1px;
+    right: 1rem;
+    background: none;
+    border: none;    
+    cursor: pointer;
+    font-size: 2rem;    
+}
+
+#hamb::before {
+    content: "☰";
+}
+
+#hamb.open::before {
+    content: "✕";
+}
+
+h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: .6rem;
+    padding-bottom: 15px;
+}
+
+.container-img-templos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;    
+}
+
+.card {
+    background-color: var(--bege-hover);
+    padding: 15px;
+    text-align: center;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.card h2 {    
+    font-size: 25px;
+    padding-bottom: 6px;
+}
+
+.card .label {
+    color: var(--marrom);
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.card p:last-of-type {
+    padding-bottom: 10px;
+}
+
+.card img {    
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+    background-color: var(--bege);
+    padding: 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+#ultimaModificacao {
+    text-align: center;
+}
+

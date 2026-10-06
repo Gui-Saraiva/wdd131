@@ -136,3 +136,21 @@ footer p {
 #ultimaModificacao {
     text-align: center;
 }
+
+@media (min-width: 620px) {
+    header div,
+    .formulario,
+    footer {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .formulario select,
+    .formulario input[type="date"],
+    .formulario input[type="text"],
+    .formulario textarea,
+    .formulario input[type="submit"] {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

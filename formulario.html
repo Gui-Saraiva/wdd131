@@ -19,38 +19,40 @@
 
     <main>
         <form method="get" action="avaliacao.html" class="formulario">
-            <label>Nome do Produto:
-                <select name="produtos" required>
-                    <option value="" disabled selected>Escolha um Produto...</option>
+            <label for="produto">Nome do Produto:
+                <select id="produto" name="produtos" required>
+                    <option value="" disabled selected>Selecione um produto...</option>
                 </select>
             </label>
 
             <label>Classificação Geral:</label>
             <div class="radios">
-                <input type="radio" name="stars" id="five-star" required>
+                <input type="radio" name="stars" id="five-star" value="5" required>
                 <label for="five-star"></label>
 
-                <input type="radio" name="stars" id="four-star">
+                <input type="radio" name="stars" id="four-star" value="4" required>
                 <label for="four-star"></label>
 
-                <input type="radio" name="stars" id="three-star">
+                <input type="radio" name="stars" id="three-star" value="3" required>
                 <label for="three-star"></label>
 
-                <input type="radio" name="stars" id="two-star">
+                <input type="radio" name="stars" id="two-star" value="2" required>
                 <label for="two-star"></label>
 
-                <input type="radio" name="stars" id="one-star">
+                <input type="radio" name="stars" id="one-star" value="1" required>
                 <label for="one-star"></label>
             </div>
 
-            <label>Data de Instalação <input type="date" name="data" required></label>
+            <label for="data">Data de Instalação
+                <input type="date" name="data" id="data" required>
+            </label>
 
             <div class="recursos">Marque os recursos úteis para você:</div>
             <div class="checkbox-container">
-                <label class="text-checkbox"><input type="checkbox" name="durabilidade" value="sim">Durabilidade</label>
-                <label class="text-checkbox"><input type="checkbox" name="facilidade" value="sim">Facilidade de Uso</label>
-                <label class="text-checkbox"><input type="checkbox" name="desempenho" value="sim">Desempenho</label>
-                <label class="text-checkbox"><input type="checkbox" name="design" value="sim">Design</label>
+                <label for="durabilidade" class="text-checkbox"><input type="checkbox" name="durabilidade" value="sim" id="durabilidade">Durabilidade</label>
+                <label for="facilidade" class="text-checkbox"><input type="checkbox" name="facilidade" value="sim" id="facilidade">Facilidade de Uso</label>
+                <label for="desempenho" class="text-checkbox"><input type="checkbox" name="desempenho" value="sim" id="desempenho">Desempenho</label>
+                <label for="design" class="text-checkbox"><input type="checkbox" name="design" value="sim" id="design">Design</label>
             </div>
 
             <label>Avaliação Escrita: <span>(Opcional)</span>                

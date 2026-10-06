@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "roboto", "sans-serif";
+}
+
+header {    
+    padding: .8rem;
+}
+
+header div{
+    display: grid;
+    place-items: center;
+    padding: .7rem;
+    background-color: darkblue;
+    color: white;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+main {
+    padding: 0 .8rem;
+}
+
+.formulario {
+    background-color: rgb(199, 199, 235);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;    
+}
+
+.radios {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+    gap: 1rem;    
+    justify-content: space-evenly;
+}
+
+.radios input {
+    position: absolute;
+    opacity: 0;
+}
+
+.radios > label::before { /* seleciona os filhos do elemento pai (radios) */
+    content: "\2606";
+    font-size: 44px;    
+}
+
+.radios input:checked ~ label::before { /* seleciona os irmãos que vem depois do elementos checkado */
+    content: "\2605";
+    color: darkblue;
+}
+
+.formulario label {
+    display: block;
+    font-size: 1rem;
+}
+
+.formulario label.text-checkbox {
+    font-size: .9rem;
+}
+
+.formulario input[type="radio"] {
+    transform: scale(2);
+}
+
+.recursos {
+    margin-bottom: 10px;
+}
+
+.checkbox-container {
+    padding: 0 .4rem;
+}
+
+.formulario input[type="checkbox"] {
+    margin-bottom: 20px;
+    transform: scale(2);
+    margin-right: 15px;    
+}
+
+.formulario select,
+.formulario input[type="date"],
+.formulario input[type="text"],
+.formulario textarea {
+    display: block;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 10px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 200px;
+}
+
+.formulario span {
+    color: darkblue;
+    font-size: .9rem;
+}
+
+.formulario input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(darkblue, rgb(0, 0, 66));
+    color: #fff;
+    border-radius: 5px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 1px 1px 4px #999;
+    font-size: 1rem;
+    font-weight: 600;    
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+    background-color: var(--bege);
+    padding: .8rem;
+    width: 100%;
+    max-width: 450px;
+}
+
+footer p {
+    text-align: center;
+}
+
+#ultimaModificacao {
+    text-align: center;
+}

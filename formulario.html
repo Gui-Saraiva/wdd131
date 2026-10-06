@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <meta name="description" content="Formulário de avaliação de produtos de uma a cinco estrelas. Você faz a avaliação e preenche seus dados se assim desejar. Seu feedback é importante para nós.">
+    <meta name="author" content="Guilherme Fagundes Saraiva">
+    <link rel="stylesheet" href="estilos/formulario-mobile.css">
+    <script src="scripts/formulario.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div><h1>Avaliação do Produto</h1></div>
+    </header>
+
+    <main>
+        <form method="get" action="avaliacao.html" class="formulario">
+            <label>Nome do Produto:
+                <select name="produtos" required>
+                    <option value="" disabled selected>Escolha um Produto...</option>
+                </select>
+            </label>
+
+            <label>Classificação Geral:</label>
+            <div class="radios">
+                <input type="radio" name="stars" id="five-star" required>
+                <label for="five-star"></label>
+
+                <input type="radio" name="stars" id="four-star">
+                <label for="four-star"></label>
+
+                <input type="radio" name="stars" id="three-star">
+                <label for="three-star"></label>
+
+                <input type="radio" name="stars" id="two-star">
+                <label for="two-star"></label>
+
+                <input type="radio" name="stars" id="one-star">
+                <label for="one-star"></label>
+            </div>
+
+            <label>Data de Instalação <input type="date" name="data" required></label>
+
+            <div class="recursos">Marque os recursos úteis para você:</div>
+            <div class="checkbox-container">
+                <label class="text-checkbox"><input type="checkbox" name="durabilidade" value="sim">Durabilidade</label>
+                <label class="text-checkbox"><input type="checkbox" name="facilidade" value="sim">Facilidade de Uso</label>
+                <label class="text-checkbox"><input type="checkbox" name="desempenho" value="sim">Desempenho</label>
+                <label class="text-checkbox"><input type="checkbox" name="design" value="sim">Design</label>
+            </div>
+
+            <label>Avaliação Escrita: <span>(Opcional)</span>                
+                <textarea id="msg" name="usuario_mensagem"></textarea>
+            </label>
+
+            <label>Seu Nome: <span>(Opcional)</span>
+                <input type="text" name="nome-usuario">
+            </label>
+
+            <input type="submit" value="Publicar Avaliação">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> &#10070; Guilherme F. Saraiva &#10070; São Paulo, Brasil</p>
+        <p id="ultimaMoficacao"></p>
+    </footer>
+</body>
+</html>
